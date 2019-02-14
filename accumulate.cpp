@@ -40,12 +40,11 @@ int main() {
 	int numberOfStudent = sizeof(students)/sizeof(students[0]);
 	Student *result;
 
-
 	cout<<"All students:"<<endl;
 	cout<<"Name\tid\tGPA\tAssignments"<<endl;
 	for(int i=0; i<numberOfStudent; i++) students[i].printStudentInfo();
  
-    cout<<"Accumulate of all assignmenst: ";
-    cout<<accumulate(students, students+numberOfStudent, 0, studentAssignments)<<endl;
+	cout<<"Accumulate of all assignmenst: ";
+	cout<<accumulate(students, students+numberOfStudent, 0, studentAssignments)<<endl;
 	return 0;
 }
